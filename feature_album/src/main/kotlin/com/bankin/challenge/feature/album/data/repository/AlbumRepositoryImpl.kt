@@ -46,4 +46,8 @@ internal class AlbumRepositoryImpl(
             }
         }
 
+    override suspend fun getSubCategories(id: Int): Result<List<CategoryUiModel>?> {
+        return Result.Success(categoryDao.getSubCategories(id)?.map { it.toDomainModel()} ?: emptyList())
+    }
+
 }

@@ -5,4 +5,6 @@ import com.bankin.challenge.feature.album.domain.model.CategoryUiModel
 
 internal interface AlbumRepository {
     suspend fun getCategories(): Result<List<CategoryUiModel>>
+    suspend fun getSubCategories(id: Int): Result<List<CategoryUiModel>?>
+
 }

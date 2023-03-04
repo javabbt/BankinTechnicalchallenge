@@ -1,4 +1,4 @@
-package com.bankin.challenge.feature.album.presentation.screen.albumdetail
+package com.bankin.challenge.feature.album.presentation.screen.categorydetail
 
 import com.bankin.challenge.library.testutils.CoroutinesTestDispatcherExtension
 import com.bankin.challenge.library.testutils.InstantTaskExecutorExtension

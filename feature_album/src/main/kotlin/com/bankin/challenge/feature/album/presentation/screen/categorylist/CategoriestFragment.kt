@@ -1,4 +1,4 @@
-package com.bankin.challenge.feature.album.presentation.screen.albumlist
+package com.bankin.challenge.feature.album.presentation.screen.categorylist
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -28,10 +28,10 @@ import com.bankin.challenge.base.presentation.activity.BaseFragment
 import com.bankin.challenge.base.presentation.compose.composable.DataNotFoundAnim
 import com.bankin.challenge.base.presentation.compose.composable.ProgressIndicator
 import com.bankin.challenge.feature.album.domain.model.CategoryUiModel
-import com.bankin.challenge.feature.album.presentation.screen.albumlist.CategoriesViewModel.UiState
-import com.bankin.challenge.feature.album.presentation.screen.albumlist.CategoriesViewModel.UiState.Content
-import com.bankin.challenge.feature.album.presentation.screen.albumlist.CategoriesViewModel.UiState.Error
-import com.bankin.challenge.feature.album.presentation.screen.albumlist.CategoriesViewModel.UiState.Loading
+import com.bankin.challenge.feature.album.presentation.screen.categorylist.CategoriesViewModel.UiState
+import com.bankin.challenge.feature.album.presentation.screen.categorylist.CategoriesViewModel.UiState.Content
+import com.bankin.challenge.feature.album.presentation.screen.categorylist.CategoriesViewModel.UiState.Error
+import com.bankin.challenge.feature.album.presentation.screen.categorylist.CategoriesViewModel.UiState.Loading
 import com.igorwojda.showcase.feature.album.R
 import org.koin.androidx.navigation.koinNavGraphViewModel
 import kotlin.random.Random

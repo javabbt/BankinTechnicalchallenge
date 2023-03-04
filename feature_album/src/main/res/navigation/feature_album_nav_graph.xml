@@ -6,7 +6,7 @@
         app:startDestination="@id/albumListFragment">
     <fragment
             android:id="@+id/albumListFragment"
-            android:name="com.bankin.challenge.feature.album.presentation.screen.albumlist.CategoriestFragment"
+            android:name="com.bankin.challenge.feature.album.presentation.screen.categorylist.CategoriestFragment"
             android:label="AlbumListFragment">
         <action
                 android:id="@+id/actionCategoriesListToSubCategories"
@@ -15,7 +15,7 @@
 
     <fragment
             android:id="@+id/subCategoriesFragment"
-            android:name="com.bankin.challenge.feature.album.presentation.screen.albumdetail.AlbumDetailFragment"
+            android:name="com.bankin.challenge.feature.album.presentation.screen.categorydetail.CategoryDetailFragment"
             android:label="AlbumDetailFragment">
         <argument
                 android:name="id"

@@ -1,11 +1,11 @@
-package com.bankin.challenge.feature.album.presentation.screen.albumlist
+package com.bankin.challenge.feature.album.presentation.screen.categorylist
 
 import androidx.lifecycle.SavedStateHandle
 import com.bankin.challenge.base.domain.result.Result
 import com.bankin.challenge.base.presentation.nav.NavManager
 import com.bankin.challenge.feature.album.domain.model.CategoryUiModel
 import com.bankin.challenge.feature.album.domain.usecase.GetCategoriesListUseCase
-import com.bankin.challenge.feature.album.presentation.screen.albumlist.CategoriesViewModel.UiState
+import com.bankin.challenge.feature.album.presentation.screen.categorylist.CategoriesViewModel.UiState
 import com.bankin.challenge.library.testutils.CoroutinesTestDispatcherExtension
 import com.bankin.challenge.library.testutils.InstantTaskExecutorExtension
 import io.mockk.coEvery
