@@ -17,7 +17,9 @@ class CategoryUiModelApiModelTest {
 
         // then
         domainModel shouldBeEqualTo CategoryUiModel(
-            cut.name
+            name = cut.name,
+            id = 0,
+            colorRes = 0
         )
     }
 
@@ -31,7 +33,9 @@ class CategoryUiModelApiModelTest {
 
         // then
         domainModel shouldBeEqualTo CategoryUiModel(
-            name = "album"
+            name = "Yann",
+            id = 0,
+            colorRes = 0
         )
     }
 }

@@ -51,7 +51,7 @@ class CategoryUiModelListViewModelTest {
     @Test
     fun `onEnter emits state success`() = runTest {
         // given
-        val categoryUiModel = CategoryUiModel("albumName")
+        val categoryUiModel = CategoryUiModel("Yann", null, 0)
         val albums = listOf(categoryUiModel)
         coEvery { mockGetCategoriesListUseCase.invoke(null) } returns Result.Success(albums)
 
@@ -75,12 +75,11 @@ class CategoryUiModelListViewModelTest {
 
         val categoryUiModel = CategoryUiModel(
             name = albumName,
+            id = 0
         )
 
-        val navDirections = AlbumListFragmentDirections.actionAlbumListToAlbumDetail(
-            artistName,
-            albumName,
-            mbId,
+        val navDirections = CategoriestFragmentDirections.actionCategoriesListToSubCategories(
+            0
         )
 
         // when

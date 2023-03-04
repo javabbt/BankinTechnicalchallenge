@@ -29,5 +29,5 @@ internal fun Category.toEntityModel() =
     )
 
 internal fun Category.toDomainModel() = CategoryUiModel(
-    name = this.name, colorRes = 0
+    name = this.name, colorRes = 0, id = this.id
 )

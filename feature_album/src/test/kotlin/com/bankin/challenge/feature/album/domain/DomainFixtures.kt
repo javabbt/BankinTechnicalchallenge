@@ -7,6 +7,7 @@ object DomainFixtures {
     internal fun getCategory(
         name: String = "albumName",
     ): CategoryUiModel = CategoryUiModel(
-        name = name
+        name = name,
+        id = 0
     )
 }

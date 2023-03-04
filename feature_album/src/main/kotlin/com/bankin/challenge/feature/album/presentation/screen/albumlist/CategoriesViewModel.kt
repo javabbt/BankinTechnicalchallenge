@@ -63,10 +63,10 @@ internal class CategoriesViewModel(
     }
 
     fun onAlbumClick(categoryUiModel: CategoryUiModel) {
-//        val navDirections =
-//            AlbumListFragmentDirections.actionAlbumListToAlbumDetail(categoryUiModel.artist, categoryUiModel.name, categoryUiModel.mbId)
-//
-//        navManager.navigate(navDirections)
+        val navDirections =
+            CategoriestFragmentDirections.actionCategoriesListToSubCategories(categoryUiModel.id)
+
+        navManager.navigate(navDirections)
     }
 
     internal sealed interface Action : BaseAction<UiState> {
