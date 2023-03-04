@@ -287,3 +287,7 @@ Read related articles to have a better understanding of underlying design decisi
 
 * [Multiple ways of defining Clean Architecture layers](https://proandroiddev.com/multiple-ways-of-defining-clean-architecture-layers-bbb70afa5d4a)
 * ...
+## If i had more time, i would have
+
+- Improved the design
+- Written more tests
