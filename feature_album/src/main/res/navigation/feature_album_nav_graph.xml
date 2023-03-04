@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Id of navigation graph matches id of the bottom_nav_menu.xml item (to make bottom menu navigation work).-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/albumNavGraph"
+        app:startDestination="@id/albumListFragment">
+    <fragment
+            android:id="@+id/albumListFragment"
+            android:name="com.bankin.challenge.feature.album.presentation.screen.albumlist.CategoriestFragment"
+            android:label="AlbumListFragment">
+        <action
+                android:id="@+id/actionCategoriesListToSubCategories"
+                app:destination="@id/subCategoriesFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/subCategoriesFragment"
+            android:name="com.bankin.challenge.feature.album.presentation.screen.albumdetail.AlbumDetailFragment"
+            android:label="AlbumDetailFragment">
+        <argument
+                android:name="id"
+                app:argType="integer" />
+    </fragment>
+</navigation>
