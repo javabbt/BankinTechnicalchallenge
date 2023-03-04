@@ -225,7 +225,7 @@ data into objects.
 
 ### Data Flow
 
-The below diagram presents application data flow when a user interacts with the `album list screen`:
+The below diagram presents application data flow when a user interacts with the `categories list screen`:
 
 ![app_data_flow](https://github.com/igorwojda/android-showcase/blob/main/misc/image/app_data_flow.png?raw=true)
 
@@ -251,10 +251,10 @@ other projects.
 
 ```kotlin
 // Before
-implementation(project(":feature_album"))
+implementation(project(":feature_categories"))
 
 // After
-implementation(projects.featureAlbum)
+implementation(projects.featureCategories)
 ```
 
 ## Logcat debuggins
