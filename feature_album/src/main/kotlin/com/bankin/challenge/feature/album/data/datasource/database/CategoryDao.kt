@@ -15,7 +15,7 @@ internal interface CategoryDao {
     @Query("SELECT * FROM categories WHERE id = :id")
     suspend fun getSubCategories(id: Int): List<CategoryEntityModel>?
 
-    @Query("SELECT * FROM categories where id = :id")
+    @Query("SELECT * FROM categories where parent LIKE '%' || :id || '%'")
     suspend fun getCategory(id: Int): CategoryEntityModel
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
